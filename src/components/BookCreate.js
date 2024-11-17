@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function BookCreate({ onCreate }) {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
 
   const handleChange = (event) => {
     setTitle(event.target.value);
@@ -10,7 +10,7 @@ function BookCreate({ onCreate }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onCreate(title);
-    setTitle('');
+    setTitle("");
   };
 
   return (
